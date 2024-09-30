@@ -11,4 +11,4 @@ USER jovyan
 
 EXPOSE 8888
 
-# ENTRYPOINT pip install -e /home/jovyan/nzshm-rupture-widget && /usr/local/bin/start.sh start-notebook.py
+ENTRYPOINT /usr/local/bin/start.sh start-notebook.py --port=8887
